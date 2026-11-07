@@ -9,6 +9,6 @@ Approx 5.5-6 fps on Ryzen 4650u, definitely potential to speed up if you make yo
 Intended usage: Processing large volumes of security related images for objects, ie, turn on time lapse, and process later.
 Or, as a plugin for motioneye upon detection to parse detections into sub-categories to save human time.
 
-No warrantee, may not work for you, please, if you build off this code, share and share alike.
+No warrantee, may not work for you without a little time and learning, please, if you build off this code, share and share alike.
 
 Thanks and kind regards to deepseek ai, chatgpt, and google search ai :)
