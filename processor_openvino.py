@@ -23,7 +23,7 @@ from ultralytics import YOLO
 
 
 # --- CONFIGURATION ---
-MODEL_PATH = "/home/mingus/yolo26s_openvino_model"  # Change this to your actual XML path, or use --model.
+MODEL_PATH = "~/yolo26s_openvino_model"  # Change this to your actual XML path, or use --model.
 #MODEL_PATH = "yolo11s.onnx"
 DEFAULT_SOURCE = "~/Pictures"
 #DEFAULT_SOURCE = "~/bus"
