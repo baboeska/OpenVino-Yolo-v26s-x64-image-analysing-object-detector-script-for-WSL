@@ -1,3 +1,6 @@
+sudo apt update && sudo apt upgrade -y
+#Install python3
+sudo apt install python3-full
 # Create and activate virtual environment
 python3 -m venv openvino-env
 source openvino-env/bin/activate
