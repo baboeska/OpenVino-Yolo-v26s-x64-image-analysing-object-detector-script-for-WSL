@@ -19,7 +19,7 @@ model.export(format="openvino", imgsz=640, nms=False)
 
 
 # Dry run test (recommended to validate on a small sample first)
-python processor_openvino.py -i ~/Pictures -o ~/Pictures_Sorted -m ./yolo26s_openvino_model/ --dry-run
+python bipod-ov.py -i ~/Pictures -o ~/Pictures_Sorted -m ./yolo26s_openvino_model/ --dry-run
 
 # Formal run
-python processor_openvino.py -i ~/Pictures -o ~/Pictures_Sorted -m ./yolo26s_openvino_model/ --conf 0.4
+python bipod-ov.py -i ~/Pictures -o ~/Pictures_Sorted -m ./yolo26s_openvino_model/ --conf 0.4
