@@ -10,7 +10,7 @@ I had a bit of trouble getting the model to load properly, try talking to deepse
 
 *** point --model at the directory, not the .xml, and export with nms=False to dodge the mask-shape error. ***
 
-Approx 5.5-6 fps on Ryzen 4650u, definitely potential to speed up if you make your own model, etc, but, sufficient for batch jobs over night.
+5.5-6.6 fps on Ryzen 4650u, 12-13 fps on Core i9 13900H
 
 Intended usage: Processing large volumes of security related images for objects, ie, turn on time lapse, and process later.
 Or, as a plugin for motioneye upon detection to parse detections into sub-categories to save human time, however, this is less likely.
