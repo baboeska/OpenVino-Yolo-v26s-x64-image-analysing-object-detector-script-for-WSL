@@ -1,6 +1,6 @@
-## AI BIPOD for Yolo 26s Openvino.
+# AI BIPOD for Yolo 26s Openvino.
 
-# Batch image processor with object detection.
+## Batch image processor with object detection.
 
 This program processes a directory of images for various objects, and then outputs the sorted images into a different directory. It copies, not deletes, so does require slightly greater free space than the size of images to be processed.
 
@@ -26,35 +26,35 @@ Thanks and kind regards to deepseek ai, chatgpt, and google search ai :)
 
     sudo apt install python3-full
 
-# Create and activate virtual environment
+## Create and activate virtual environment
 
     python3 -m venv bipod-yolo26s-ov
 
     source bipod-yolo26s-ov/bin/activate
 
 
-# Install core dependencies (note: INT8 quantization requires nncf)
+## Install core dependencies (note: INT8 quantization requires nncf)
 
     pip install ultralytics openvino opencv-python tqdm
 
-# If you need INT8 acceleration, additionally install:
-# pip install nncf
+## If you need INT8 acceleration, additionally install:
+## pip install nncf
 
     from ultralytics import YOLO
 
-# Download and export YOLO26s (disable end-to-end to ensure output format compatibility)
+## Download and export YOLO26s (disable end-to-end to ensure output format compatibility)
 
     model = YOLO("yolo26s.pt")
 
     model.export(format="openvino", imgsz=640, nms=False)
 
-# After export, you will get a directory like yolo26s_openvino_model/
+## After export, you will get a directory like yolo26s_openvino_model/
 
 
-# Dry run test (recommended to validate on a small sample first)
+## Dry run test (recommended to validate on a small sample first)
 
     python bipod-ov.py -i ~/Pictures -o ~/Pictures_Sorted -m ./yolo26s_openvino_model/ --dry-run
 
-# Formal run
+## Formal run
 
     python bipod-ov.py -i ~/Pictures -o ~/Pictures_Sorted -m ./yolo26s_openvino_model/ --conf 0.4
