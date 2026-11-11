@@ -20,6 +20,10 @@ No warrantee, may not work for you without a little time and learning, please, i
 Thanks and kind regards to deepseek ai, chatgpt, and google search ai :)
 
 
+
+##How to:
+
+
     sudo apt update && sudo apt upgrade -y
 
 #Install python3
