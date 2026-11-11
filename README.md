@@ -40,14 +40,15 @@ Thanks and kind regards to deepseek ai, chatgpt, and google search ai :)
 ## If you need INT8 acceleration, additionally install:
 ## pip install nncf
 
-    python3 -c "from ultralytics import YOLO; YOLO('yolo26n.pt').export(format='openvino', imgsz=640, nms=False)"
 
 ## Download and export YOLO26s (disable end-to-end to ensure output format compatibility)
 
+    python3 - <<'EOF'
+    from ultralytics import YOLO
     model = YOLO("yolo26s.pt")
-
     model.export(format="openvino", imgsz=640, nms=False)
-
+    EOF
+ 
 ## After export, you will get a directory like yolo26s_openvino_model/
 
 
