@@ -40,7 +40,7 @@ Thanks and kind regards to deepseek ai, chatgpt, and google search ai :)
 ## If you need INT8 acceleration, additionally install:
 ## pip install nncf
 
-    from ultralytics import YOLO
+    python3 -c "from ultralytics import YOLO; YOLO('yolo26n.pt').export(format='openvino', imgsz=640, nms=False)"
 
 ## Download and export YOLO26s (disable end-to-end to ensure output format compatibility)
 
