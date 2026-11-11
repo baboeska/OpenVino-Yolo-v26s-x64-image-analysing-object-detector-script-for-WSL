@@ -21,12 +21,12 @@ Thanks and kind regards to deepseek ai, chatgpt, and google search ai :)
 
 
 
-##How to:
+# How to:
 
 
     sudo apt update && sudo apt upgrade -y
 
-#Install python3
+## Install python3
 
     sudo apt install python3-full
 
