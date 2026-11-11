@@ -6,8 +6,6 @@ This program processes a directory of images for various objects, and then outpu
 
 Work in progress currently, may be glitchy re model placement.
 
-I had a bit of trouble getting the model to load properly, try talking to deepseek or chatgpt or your favourite ai buddy for fine tuning.
-
 *** point --model at the directory, not the .xml, and export with nms=False to dodge the mask-shape error. ***
 
 5.5-6.6 fps on Ryzen 4650u, 10-13 fps on Core i9 13900H
@@ -63,3 +61,8 @@ Thanks and kind regards to deepseek ai, chatgpt, and google search ai :)
 ## Formal run
 
     python bipod-ov.py -i ~/Pictures -o ~/Pictures_Sorted -m ./yolo26s_openvino_model/ --conf 0.4
+
+
+## Problems?
+
+Raise an issue here, or, consult with your favourite AI, Google Search AI, Deepseek, and ChatGPT all contributed to this.
