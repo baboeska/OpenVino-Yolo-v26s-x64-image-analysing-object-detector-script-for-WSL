@@ -1,4 +1,10 @@
-Work in progress currently, likely to be challenging and glitchy re model placement, but pretty decent once it's done.
+## AI BIPOD for Yolo 26s Openvino.
+
+# Batch image processor with object detection.
+
+This program processes a directory of images for various objects, and then outputs the sorted images into a different directory. It copies, not deletes, so does require slightly greater free space than the size of images to be processed.
+
+Work in progress currently, may be glitchy re model placement.
 
 I had a bit of trouble getting the model to load properly, try talking to deepseek or chatgpt or your favourite ai buddy for fine tuning.
 
