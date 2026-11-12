@@ -58,6 +58,12 @@ Thanks and kind regards to deepseek ai, chatgpt, and google search ai :)
 
 *** point --model at the directory, not the .xml, and export with nms=False to dodge the mask-shape error. ***
 
+### You must activate the Python venv you created earlier prior to running;
+
+    source ~/openvino-env/bin/activate
+
+## Test
+
     python bipod-ov.py -i ~/Pictures -o ~/Pictures_Sorted -m ./yolo26s_openvino_model/ --dry-run
 
 ## Formal run
