@@ -76,15 +76,27 @@ Thanks and kind regards to deepseek ai, chatgpt, and google search ai :)
     Images larger than 4K (3840px) will be downscaled first so your RAM doesn't explode.
 
 You can override this behaviour with flags:
+
+
 Flag	What it does
+
+
 --mode resize	Never tiles. Fastest, but misses small/distant objects.
+
 --mode tile	Always tiles. Slower, but maximum accuracy for high-res images.
+
 --mode auto	(Default) Resizes small images, tiles large ones.
+
 --tile-threshold 1000	Change the threshold (in pixels) where auto switches to tiling.
+
 --tile-size 640	Size of the tiles (should match your model's export resolution).
+
 --tile-overlap 100	Overlap between tiles in pixels (prevents cutting objects in half).
+
 --max-edge 3840	Downscale massive images to this maximum dimension before tiling.
-Logs and Output
+
+
+## Logs and Output
 
 At the end of a run, the script generates two files inside your output directory:
 
