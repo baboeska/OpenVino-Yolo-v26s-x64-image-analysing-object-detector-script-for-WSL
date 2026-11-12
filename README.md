@@ -4,9 +4,6 @@
 
 This program processes a directory of images for various objects, and then outputs the sorted images into a different directory. It copies, not deletes, so does require slightly greater free space than the size of images to be processed.
 
-Work in progress currently, may be glitchy re model placement.
-
-*** point --model at the directory, not the .xml, and export with nms=False to dodge the mask-shape error. ***
 
 5.5-6.6 fps on Ryzen 4650u, 10-13 fps on Core i9 13900H
 
@@ -57,7 +54,9 @@ Thanks and kind regards to deepseek ai, chatgpt, and google search ai :)
 ## After export, you will get a directory like yolo26s_openvino_model/
 
 
-## Dry run test (recommended to validate on a small sample first)
+## Dry run test (recommended to validate on a small sample first) - Note: 
+
+*** point --model at the directory, not the .xml, and export with nms=False to dodge the mask-shape error. ***
 
     python bipod-ov.py -i ~/Pictures -o ~/Pictures_Sorted -m ./yolo26s_openvino_model/ --dry-run
 
