@@ -10,7 +10,7 @@ Work in progress currently, may be glitchy re model placement.
 
 5.5-6.6 fps on Ryzen 4650u, 10-13 fps on Core i9 13900H
 
-*(Note: Tiling mode will be roughly 2–4× slower, but detects much smaller objects).*
+*(Note: Tiling mode will be roughly 1.5–4×+ slower, but detects much smaller objects).*
 
 Intended usage: Processing large volumes of security related images for objects, ie, turn on time lapse, and process later.
 Or, as a plugin for motioneye upon detection to parse detections into sub-categories to save human time, however, this is less likely.
