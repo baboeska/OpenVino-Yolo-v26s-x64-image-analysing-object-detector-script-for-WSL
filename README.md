@@ -100,9 +100,12 @@ Flag	What it does
 
 At the end of a run, the script generates two files inside your output directory:
 
-    run_summary.txt: A text file detailing exactly how many images were scanned, how many contained detections, and the breakdown of classes.
 
-    failures.csv: A spreadsheet containing the path and exact error reason for any images that were corrupt, too large, or failed during processing.
+run_summary.txt: A text file detailing exactly how many images were scanned, how many contained detections, and the breakdown of classes.
+
+
+failures.csv: A spreadsheet containing the path and exact error reason for any images that were corrupt, too large, or failed during processing.
+
 
 If two files from different folders have the same name, the script will automatically append _1, _2 to the filename so you never overwrite data.
 
