@@ -65,7 +65,7 @@ def parse_args():
     parser.add_argument("--mode", choices=["resize", "tile", "auto"], default=DEFAULT_MODE,
         help="resize: fast; tile: slow, high accuracy; auto: resize small, tile large (default)")
     parser.add_argument("--tile-threshold", type=int, default=DEFAULT_TILE_THRESHOLD,
-        help="in auto mode, tile images larger than this (default: 2560)")
+        help="in auto mode, tile images larger than this (default: 1000)")
     parser.add_argument("--tile-size", type=int, default=DEFAULT_TILE_SIZE,
         help="tile dimensions (default: 640)")
     parser.add_argument("--tile-overlap", type=int, default=DEFAULT_TILE_OVERLAP,
