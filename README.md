@@ -20,7 +20,9 @@ Thanks and kind regards to deepseek ai, chatgpt, and google search ai :)
 
 # How to:
 
-
+    ./install-bipod-ov.sh
+    
+# OR
     sudo apt update && sudo apt upgrade -y
 
 ## Install python3
