@@ -14,7 +14,7 @@ Or, as a plugin for motioneye upon detection to parse detections into sub-catego
 
 No warrantee, may not work for you without a little time and learning, please, if you build off this code, share and share alike.
 
-Thanks and kind regards to deepseek ai, chatgpt, and google search ai :)
+Thanks and kind regards to deepseek ai, chatgpt, Gemma4, and google search ai :)
 
 
 
