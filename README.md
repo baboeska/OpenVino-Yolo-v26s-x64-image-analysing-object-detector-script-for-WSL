@@ -64,7 +64,7 @@ Thanks and kind regards to deepseek ai, chatgpt, and google search ai :)
 
 ### You must activate the Python venv you created earlier prior to running;
 
-    source ~/openvino-env/bin/activate
+    source ~/bipod-yolo26s-ov/bin/activate
 
 ## Test
 
