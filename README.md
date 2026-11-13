@@ -21,6 +21,8 @@ Thanks and kind regards to deepseek ai, chatgpt, and google search ai :)
 # How to:
 
     ./install-bipod-ov.sh
+    source ~/openvino-env/bin/activate
+    python3 bipod-ov.sh -i=~/Pictures -o=~/Pictures_Sorted
     
 # OR
     sudo apt update && sudo apt upgrade -y
