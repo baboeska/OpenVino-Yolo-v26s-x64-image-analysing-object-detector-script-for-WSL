@@ -22,7 +22,7 @@ Thanks and kind regards to deepseek ai, chatgpt, Gemma4, and google search ai :)
 # How to:
 
     ./install-bipod-ov.sh
-    source ~/openvino-env/bin/activate
+    source ~/bipod-yolo26s-ov/bin/activate
     python3 bipod-ov.py -i=~/Pictures -o=~/Pictures_Sorted
     
 # OR
@@ -79,11 +79,11 @@ Thanks and kind regards to deepseek ai, chatgpt, Gemma4, and google search ai :)
 
 ## By default, the script runs in --mode auto.
 
-    Images smaller than 1000px will be quickly resized.
+Images smaller than 1000px will be quickly resized.
 
-    Images larger than 1000px will be tiled into 640x640 overlapping squares to catch distant, small objects.
+Images larger than 1000px will be tiled into 640x640 overlapping squares to catch distant, small objects.
 
-    Images larger than 4K (3840px) will be downscaled first so your RAM doesn't explode.
+Images larger than 4K (3840px) will be downscaled first so your RAM doesn't explode.
 
 You can override this behaviour with flags:
 
