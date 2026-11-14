@@ -124,7 +124,7 @@ If two files from different folders have the same name, the script will automati
 ## Intel graphics (Intel HD, XE, Arc) acceleration:
 
 
-If using on WSL, [-please ensure your Windows install is fully up to date with the latest Intel graphics driver for your hardware installed.
+If using on WSL, please ensure your Windows install is fully up to date with the latest Intel graphics driver for your hardware installed.
 
 It should autodetect your GPU and use it if available. It might not. 6-8x speed increase vs CPU.
 
