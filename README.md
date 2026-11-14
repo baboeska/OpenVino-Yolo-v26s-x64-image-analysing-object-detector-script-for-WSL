@@ -119,7 +119,7 @@ If two files from different folders have the same name, the script will automati
 
 
 
-## Optional Linux native Intel igpu acceleration:
+## Intel graphics (Intel HD, XE, Arc) acceleration:
 
 
 Please ensure your Windows install is fully up to date with the latest Intel graphics driver for your hardware installed.
