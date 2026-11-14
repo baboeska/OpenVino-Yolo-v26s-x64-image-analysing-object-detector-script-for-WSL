@@ -5,7 +5,9 @@
 This program processes a directory of images for various objects, and then outputs the sorted images into a different directory. It copies, not deletes, so does require slightly greater free space than the size of images to be processed.
 
 
-5.5-6.6 fps on Ryzen 4650u, 10-13 fps on Core i9 13900H
+5.5-6.6 fps on Ryzen 4650u, 10-13 fps on Core i9 13900H, 30-40 fps on Intel Iris Xe.
+
+All tests done in WSL on Windows 11.
 
 *(Note: Tiling mode will be roughly 1.5–4×+ slower, but detects much smaller objects).*
 
