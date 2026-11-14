@@ -17,7 +17,6 @@ No warrantee, may not work for you without a little time and learning, please, i
 Thanks and kind regards to deepseek ai, chatgpt, Gemma4, and google search ai :)
 
 
-
 # How to:
 
     ./install-bipod-ov.sh
@@ -117,6 +116,26 @@ failures.csv: A spreadsheet containing the path and exact error reason for any i
 
 
 If two files from different folders have the same name, the script will automatically append _1, _2 to the filename so you never overwrite data.
+
+
+
+# Optional Linux native Intel igpu how acceleration:
+
+
+It should autodetect your GPU and use it if available.It might not. Don't bother if not a native Linux install.
+
+sudo apt update
+sudo apt install -y ocl-icd-libopencl1 clinfo intel-opencl-icd intel-level-zero-gpu level-zero
+
+sudo usermod -aG video $USER
+
+sudo usermod -aG render $USER
+
+
+Edit model line in script to force gpu.
+
+# Use 'xpu' for OpenVINO to select the Intel GPU
+results = model.predict(arr, conf=conf_thresh, verbose=False, device="xpu")[0]
 
 
 ## Problems?
