@@ -33,7 +33,7 @@ from tqdm import tqdm
 from ultralytics import YOLO
 
 # --- CONFIGURATION ---
-MODEL_PATH = "~/yolo26n_openvino_model"
+MODEL_PATH = "~/yolo26s_openvino_model"
 DEFAULT_SOURCE = "~/Pictures"
 DEFAULT_OUTPUT = "~/Picturez"
 DEFAULT_CONF = 0.40
