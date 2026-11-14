@@ -126,7 +126,13 @@ It should autodetect your GPU and use it if available. It might not. Don't bothe
 
 sudo apt update
 
-sudo apt install -y ocl-icd-libopencl1 clinfo intel-opencl-icd intel-level-zero-gpu level-zero
+sudo apt install -y software-properties-common
+
+sudo add-apt-repository -y ppa:kobuk-team/intel-graphics
+
+sudo apt update
+
+sudo apt install -y ocl-icd-libopencl1 clinfo intel-opencl-icd libze-intel-gpu1 libze1
 
 sudo usermod -aG video $USER
 
