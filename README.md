@@ -124,23 +124,23 @@ If two files from different folders have the same name, the script will automati
 ## Intel graphics (Intel HD, XE, Arc) acceleration:
 
 
-Please ensure your Windows install is fully up to date with the latest Intel graphics driver for your hardware installed.
+If using on WSL, [-please ensure your Windows install is fully up to date with the latest Intel graphics driver for your hardware installed.
 
 It should autodetect your GPU and use it if available. It might not. 6-8x speed increase vs CPU.
 
-sudo apt update
+    sudo apt update
 
-sudo apt install -y software-properties-common
+    sudo apt install -y software-properties-common
 
-sudo add-apt-repository -y ppa:kobuk-team/intel-graphics
+    sudo add-apt-repository -y ppa:kobuk-team/intel-graphics
 
-sudo apt update
+    sudo apt update
 
-sudo apt install -y ocl-icd-libopencl1 clinfo intel-opencl-icd libze-intel-gpu1 libze1
+    sudo apt install -y ocl-icd-libopencl1 clinfo intel-opencl-icd libze-intel-gpu1 libze1
 
-sudo usermod -aG video $USER
+    sudo usermod -aG video $USER
 
-sudo usermod -aG render $USER
+    sudo usermod -aG render $USER
 
 
 
